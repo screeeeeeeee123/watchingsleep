@@ -19,7 +19,246 @@ local WeldHats = ReanimateSettings.WeldHats
 local Fling = ReanimateSettings.Fling
 local ReloadCharacterScripts = ReanimateSettings.ReloadCharacterScripts
 local DoProxyCollision = ReanimateSettings.DoProxyCollision
-
+--Character
+local p = game.Players.LocalPlayer
+local c = p.Character
+Bypass = "death"
+loadstring(game:GetObjects("rbxassetid://5325226148")[1].Source)()
+--Fake Character
+local m = Instance.new("Model",c)
+m.Name = "Fake Character"
+local t = Instance.new("Part",m)
+t.Name = "Torso"
+t.Position = c.HumanoidRootPart.Position
+local h = Instance.new("Part",m)
+h.Name = "Head"
+h.Position = c.HumanoidRootPart.Position
+local hum = Instance.new("Humanoid",m)
+for i,v in pairs(game.Players:GetChildren()) do
+    if v.Character ~= nil and v ~= game.Players.LocalPlayer then
+        if v.Character:FindFirstChild("Right Arm") then
+            v.Character:FindFirstChild("Right Arm").ChildAdded:Connect(function(child)
+                if child.Name == "RightGrip" then
+                    wait(0.1)
+                    if child.Part1 ~= nil then
+                        if child.Part1.Parent ~= nil then
+                            if child.Part1.Parent:IsA("Accessory") then
+                                child:Destroy()
+                            end
+                        end
+                    end
+                end
+            end)
+            for i,v in pairs(v.Character:FindFirstChild("Right Arm"):GetChildren()) do
+                if v.Name == "RightGrip" then
+                    wait(0.1)
+                    if Part1 ~= nil then
+                        if Part1.Parent ~= nil then
+                            if v.Part1.Parent:IsA("Accessory") then
+                                v:Destroy()
+                            end
+                        end
+                    end
+                end
+            end
+        elseif v.Character:FindFirstChild("RightHand") and v.Character:FindFirstChild("UpperTorso") then
+            v.Character:FindFirstChild("RightHand").ChildAdded:Connect(function(child)
+                if child.Name == "RightGrip" then
+                    wait(0.1)
+                    if child.Part1 ~= nil then
+                        if child.Part1.Parent ~= nil then
+                            if child.Part1.Parent:IsA("Accessory") then
+                                child:Destroy()
+                            end
+                        end
+                    end
+                end
+            end)
+            for i,v in pairs(v.Character:FindFirstChild("RightHand"):GetChildren()) do
+                if v.Name == "RightGrip" then
+                    wait(0.1)
+                    if Part1 ~= nil then
+                        if Part1.Parent ~= nil then
+                            if v.Part1.Parent:IsA("Accessory") then
+                                v:Destroy()
+                            end
+                        end
+                    end
+                end
+            end
+        end
+    end
+    v.CharacterAppearanceLoaded:Connect(function(char)
+        if v.Character:FindFirstChild("Right Arm") then
+            v.Character:FindFirstChild("Right Arm").ChildAdded:Connect(function(child)
+                if child.Name == "RightGrip" then
+                    wait(0.1)
+                    if child.Part1 ~= nil then
+                        if child.Part1.Parent ~= nil then
+                            if child.Part1.Parent:IsA("Accessory") then
+                                child:Destroy()
+                            end
+                        end
+                    end
+                end
+            end)
+            for i,v in pairs(v.Character:FindFirstChild("Right Arm"):GetChildren()) do
+                if v.Name == "RightGrip" then
+                    wait(0.1)
+                    if Part1 ~= nil then
+                        if Part1.Parent ~= nil then
+                            if v.Part1.Parent:IsA("Accessory") then
+                                v:Destroy()
+                            end
+                        end
+                    end
+                end
+            end
+        elseif v.Character:FindFirstChild("RightHand") and v.Character:FindFirstChild("UpperTorso") then
+            v.Character:FindFirstChild("RightHand").ChildAdded:Connect(function(child)
+                if child.Name == "RightGrip" then
+                    wait(0.1)
+                    if child.Part1 ~= nil then
+                        if child.Part1.Parent ~= nil then
+                            if child.Part1.Parent:IsA("Accessory") then
+                                child:Destroy()
+                            end
+                        end
+                    end
+                end
+            end)
+            for i,v in pairs(v.Character:FindFirstChild("RightHand"):GetChildren()) do
+                if v.Name == "RightGrip" then
+                    wait(0.1)
+                    if Part1 ~= nil then
+                        if Part1.Parent ~= nil then
+                            if v.Part1.Parent:IsA("Accessory") then
+                                v:Destroy()
+                            end
+                        end
+                    end
+                end
+            end
+        end
+    end)
+end
+ 
+game.Players.PlayerAdded:Connect(function(v)
+wait()
+    if v.Character ~= nil and v ~= game.Players.LocalPlayer then
+        if v.Character:FindFirstChild("Right Arm") then
+            v.Character:FindFirstChild("Right Arm").ChildAdded:Connect(function(child)
+                if child.Name == "RightGrip" then
+                    wait(0.1)
+                    if child.Part1 ~= nil then
+                        if child.Part1.Parent ~= nil then
+                            if child.Part1.Parent:IsA("Accessory") then
+                                child:Destroy()
+                            end
+                        end
+                    end
+                end
+            end)
+            for i,v in pairs(v.Character:FindFirstChild("Right Arm"):GetChildren()) do
+                if v.Name == "RightGrip" then
+                    wait(0.1)
+                    if Part1 ~= nil then
+                        if Part1.Parent ~= nil then
+                            if v.Part1.Parent:IsA("Accessory") then
+                                v:Destroy()
+                            end
+                        end
+                    end
+                end
+            end
+        elseif v.Character:FindFirstChild("RightHand") and v.Character:FindFirstChild("UpperTorso") then
+            v.Character:FindFirstChild("RightHand").ChildAdded:Connect(function(child)
+                if child.Name == "RightGrip" then
+                    wait(0.1)
+                    if child.Part1 ~= nil then
+                        if child.Part1.Parent ~= nil then
+                            if child.Part1.Parent:IsA("Accessory") then
+                                child:Destroy()
+                            end
+                        end
+                    end
+                end
+            end)
+            for i,v in pairs(v.Character:FindFirstChild("RightHand"):GetChildren()) do
+                if v.Name == "RightGrip" then
+                    wait(0.1)
+                    if Part1 ~= nil then
+                        if Part1.Parent ~= nil then
+                            if v.Part1.Parent:IsA("Accessory") then
+                                v:Destroy()
+                            end
+                        end
+                    end
+                end
+            end
+        end
+    end
+    v.CharacterAppearanceLoaded:Connect(function(char)
+        if v.Character:FindFirstChild("Right Arm") then
+            v.Character:FindFirstChild("Right Arm").ChildAdded:Connect(function(child)
+                if child.Name == "RightGrip" then
+                    wait(0.1)
+                    if child.Part1 ~= nil then
+                        if child.Part1.Parent ~= nil then
+                            if child.Part1.Parent:IsA("Accessory") then
+                                child:Destroy()
+                            end
+                        end
+                    end
+                end
+            end)
+            for i,v in pairs(v.Character:FindFirstChild("Right Arm"):GetChildren()) do
+                if v.Name == "RightGrip" then
+                    wait(0.1)
+                    if Part1 ~= nil then
+                        if Part1.Parent ~= nil then
+                            if v.Part1.Parent:IsA("Accessory") then
+                                v:Destroy()
+                            end
+                        end
+                    end
+                end
+            end
+        elseif v.Character:FindFirstChild("RightHand") and v.Character:FindFirstChild("UpperTorso") then
+            v.Character:FindFirstChild("RightHand").ChildAdded:Connect(function(child)
+                if child.Name == "RightGrip" then
+                    wait(0.1)
+                    if child.Part1 ~= nil then
+                        if child.Part1.Parent ~= nil then
+                            if child.Part1.Parent:IsA("Accessory") then
+                                child:Destroy()
+                            end
+                        end
+                    end
+                end
+            end)
+            for i,v in pairs(v.Character:FindFirstChild("RightHand"):GetChildren()) do
+                if v.Name == "RightGrip" then
+                    wait(0.1)
+                    if Part1 ~= nil then
+                        if Part1.Parent ~= nil then
+                            if v.Part1.Parent:IsA("Accessory") then
+                                v:Destroy()
+                            end
+                        end
+                    end
+                end
+            end
+        end
+    end)
+end)
+--Bypass
+p.Character = m
+wait(3)
+p.Character = c
+wait(3)
+ 
+p.Character.Humanoid.Health = 0
 
 
 
